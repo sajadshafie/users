@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: normal;
+  /* fonts/IRANYekan/eot/iranyekanwebregularfanum.eot */
+  src: url("../../public/fonts/IRANYekan/eot/iranyekanwebboldfanum.eot");
+  src: url("../../public/fonts/IRANYekan/eot/iranyekanwebregularfanum.eot?#iefix") format("embedded-opentype"),
+    /* IE6-8 */
+    url("../../public/fonts/IRANYekan/woff/iranyekanwebregularfanum.woff") format("woff"),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url("../../public/fonts/IRANYekan/woff2/iranyekanwebregularfanum.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/
+    url("../../public/fonts/IRANYekan/ttf/iranyekanwebregularfanum.ttf") format("truetype");
+}
+
+:root {
+  --background: #ffffff;
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+
+    --foreground: #ededed;
+  }
+}
+
+body {
+  font-family: iranyekan !important;
+  direction: rtl;
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
